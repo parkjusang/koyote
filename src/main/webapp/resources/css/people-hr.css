@@ -1,0 +1,434 @@
+/* people-hr */
+main {
+	padding-bottom: 50px;
+}
+div.container {
+    min-width: 960px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 36px;
+    box-sizing: border-box;
+}
+
+/* head hr */
+.wrap_peo-hr > .head_hr {
+    color: rgb(31, 46, 61);
+    padding-top: 0px;
+    padding-bottom: 24px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: -0.5px;
+}
+.wrap_peo-hr > .head_hr > .title {
+    display: inline-block;
+    position: relative;
+}
+.wrap_peo-hr > .head_hr  .line_hr {
+	left: 0px;
+    bottom: 2px;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(255, 224, 102);
+    position: absolute;
+}
+.wrap_peo-hr > .head_hr  .txt_hr {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* content menu */
+.wrap_peo-hr > .content_menu {
+    min-width: 976px;
+    max-width: 1200px;
+    margin-bottom: 46px;
+    margin-left: -8px;
+    margin-right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrap_peo-hr > .content_menu > .btn_menu {
+	position: relative;
+    overflow: hidden;
+    width: 25%;
+    height: 180px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 24px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: rgb(20 20 20 / 2%) 2px 8px 12px 0px, rgb(20 20 20 / 2%) 0px 1px 3px 0px;
+}
+.wrap_peo-hr > .content_menu > .btn_menu:hover {
+	background-color: rgb(248,248,248);
+}
+.wrap_peo-hr > .content_menu > .btn_menu > p {
+    color: rgb(139, 152, 167);
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.wrap_peo-hr > .content_menu  .content {
+    color: rgb(31, 46, 61);
+    width: 100%;
+    margin-top: 12px;
+    display: flex;
+    font-size: 22px;
+    font-weight: 1000;
+    align-items: center;
+}
+.wrap_peo-hr > .content_menu  .icon_arrow {
+    margin-left: 8px;
+    margin-top: -1px;
+    display: inline-flex;
+    align-items: center;
+}
+.wrap_peo-hr > .content_menu  .icon_arrow > i {
+    color: rgb(139, 152, 167);
+	font-size: 18px;
+}
+.wrap_peo-hr > .content_menu  .box_icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+}
+.wrap_peo-hr > .content_menu  .icon_plus > i {
+	font-size: 40pt;
+	color: rgb(2, 155, 247);
+}
+.wrap_peo-hr > .content_menu  .icon_card > i {
+	font-size: 45pt;
+	color: rgb(0, 216, 160);
+}
+.wrap_peo-hr > .content_menu  .icon_sign > i {
+	font-size: 43pt;
+	color: gray;
+}
+.wrap_peo-hr > .content_menu  .icon_tie > i {
+	font-size: 45pt;
+	color: black;
+}
+
+
+/* content change */
+.wrap_peo-hr > .content_change {
+    padding-bottom: 60px;
+}
+.wrap_peo-hr  .div_change {
+    min-width: 960px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrap_peo-hr  .table_change {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(20 20 20 / 2%) 2px 8px 12px 0px, rgb(20 20 20 / 2%) 0px 1px 3px 0px;
+}
+
+/* thead */
+.wrap_peo-hr  .table_change > thead > tr > th {
+    color: rgb(99, 114, 131);
+    height: 48px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    text-align: left;
+    box-shadow: rgb(0 0 0 / 6%) 0px -1px 0px 0px inset;
+    white-space: nowrap;
+}
+.wrap_peo-hr  .table_change > thead > tr > th > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrap_peo-hr  .table_change > thead > tr > th > div > ul {
+	width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 1px inset;
+}
+.wrap_peo-hr  .menu_change {
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 16px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    list-style-type: none;
+}
+.wrap_peo-hr  .menu_change > button {
+    position: relative;
+    overflow: hidden;
+    color: rgb(31, 46, 61);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 9px 8px;
+    display: flex;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-weight: 1000;
+    line-height: 18px;
+    align-items: center;
+}
+.wrap_peo-hr  .menu_change > .line {
+    left: 7px;
+    right: 7px;
+    bottom: 0px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: rgb(31, 46, 61);
+    position: absolute;
+}
+.wrap_peo-hr  #btn_search-date {
+    overflow: hidden;
+    color: rgb(99, 114, 131);
+    width: 108px;
+    height: 38px;
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-flex;
+    position: relative;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    vertical-align: middle;
+}
+.wrap_peo-hr  #btn_search-date > .txt_date {
+	display: flex;
+    align-items: center;
+}
+.wrap_peo-hr  #btn_search-date > .icon_down {
+	margin-right: -6px;
+    margin-left: 4px;
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.5;
+}
+.wrap_peo-hr  #btn_search-date > .icon_down > i {
+    font-size: 18px;
+}
+
+/* tbody */
+.wrap_peo-hr  #btn_search-date:hover,
+.wrap_peo-hr  .table_change  button:hover {
+	background-color: rgb(248,248,248);
+}
+.wrap_peo-hr  #list_change  td.box_check {
+	width: 60px;
+    height: 48px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 400;
+    box-shadow: rgb(0 0 0 / 2%) -1px 0px 0px 0px inset, rgb(0 0 0 / 8%) 0px -1px 0px 0px inset;
+    white-space: nowrap;
+}
+.wrap_peo-hr  #list_change  .icon_check {
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    border-radius: 0px;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    opacity: 1;
+    vertical-align: middle;
+}
+.wrap_peo-hr  #list_change  .icon_check > i {
+	color: rgb(17, 202, 114);
+    font-size: 22px;
+}
+.wrap_peo-hr  #list_change  td.box_user {
+    width: 15%;
+    height: 48px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    box-shadow: rgb(0 0 0 / 6%) 0px -1px 0px 0px inset;
+    white-space: nowrap;
+}
+.wrap_peo-hr  .btn_profile {
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.wrap_peo-hr  .btn_profile > div {
+    min-width: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.wrap_peo-hr  .btn_profile  .img_profile {
+	color: rgb(255, 255, 255);
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+/*     background-image: url(../img/profile/cat.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    position: relative;
+    font-size: 11px;
+    font-weight: 500;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 1px inset;
+    overflow: visible;
+}
+.wrap_peo-hr  .btn_profile  .user-info {
+    margin-left: 12px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+}
+.wrap_peo-hr  .user-name {
+	color: rgb(31, 46, 61);
+    max-width: 100%;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.wrap_peo-hr  .create-date {
+    color: rgb(139, 152, 167);
+    max-width: 100%;
+    font-size: 11px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.wrap_peo-hr  #list_change  td.content_change {
+	width: 70%;
+    height: 48px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    box-shadow: rgb(0 0 0 / 6%) 0px -1px 0px 0px inset;
+    white-space: nowrap;
+}
+.wrap_peo-hr  #list_change  td.content_change > div{
+	width: 100%;
+    height: 100%;
+    position: relative;
+}
+.wrap_peo-hr  .btn_change {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+}
+.wrap_peo-hr  .btn_change > p {
+	color: rgb(58, 80, 100);
+    width: 100%;
+    font-size: 14px;
+    font-weight: 800;
+}
+.wrap_peo-hr  .txt_change {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.wrap_peo-hr  #list_change  td.content_change > .icon_view {
+
+}
+.wrap_peo-hr  #list_change  td.box_side-menu {
+	width: 44px;
+    height: 48px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: 400;
+    box-shadow: rgb(0 0 0 / 6%) 0px -1px 0px 0px inset;
+    white-space: nowrap;
+}
+.wrap_peo-hr  .btn_side-menu {
+	overflow: hidden;
+    color: rgb(139, 152, 167);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 0px;
+    display: inline-flex;
+    position: relative;
+    font-size: 22px;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    opacity: 1;
+    vertical-align: middle;
+}
+.wrap_peo-hr  .btn_side-menu > .icon_side-menu {
+    display: inline-flex;
+    line-height: 1.4;
+    align-items: center;
+}
+.wrap_peo-hr  .btn_side-menu > .icon_side-menu > i {
+    font-size: 14px;
+}
+
+
+/* side menu */
+.wrap_peo-hr  #side-menu {
+	border: 1px solid red;
+	height: 100px;
+	width: 100px;
+}

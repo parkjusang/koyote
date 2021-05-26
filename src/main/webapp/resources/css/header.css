@@ -1,0 +1,552 @@
+
+header#gnb {
+    min-width: 960px;
+    margin-bottom: 36px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(63 70 125 / 20%) 0px 1px 3px 0px, rgb(101 94 115 / 10%) 2px 4px 8px 1px;
+}
+
+/* gnb_top */
+header#gnb > .gnb_top {
+	background-image: linear-gradient(315deg, rgb(0, 216, 160), rgb(2, 155, 247), rgb(2, 155, 247));
+	height: 52px;
+}
+
+/* gnb_mid */
+header#gnb > .gnb_mid > .mid_content {
+    height: 92px;
+    min-width: 960px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 36px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+header#gnb > .gnb_mid > .mid_content > .logo-box {
+    width: 200px;
+    margin-left: 10px;
+}
+header#gnb > .gnb_mid > .mid_content > .logo-box > a > .logo {
+	height: 39px;
+}
+
+header#gnb > .gnb_mid > .mid_content > nav {
+	display: flex;
+	flex-grow: 1;
+    align-items: center;
+    justify-content: center;	
+}
+header#gnb > .gnb_mid > .mid_content > nav > ul {
+	list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header#gnb > .gnb_mid > .mid_content > nav > ul > li {
+	margin-right: 14px;
+}
+
+/* menu on/off */
+header#gnb > .gnb_mid > .mid_content > nav > ul > li.gnb_on > a > .btn_menu {
+	background-color: rgba(8, 126, 247, 0.1);
+}
+header#gnb > .gnb_mid > .mid_content > nav > ul > li.gnb_on > a > .btn_menu > .txt_menu,
+header#gnb > .gnb_mid > .mid_content > nav > ul > li.gnb_on > a > .btn_menu > .icon > i {
+	color: rgb(7, 110, 215);
+}
+
+
+header#gnb > .gnb_mid > .mid_content > nav > ul > li > a > .btn_menu {
+    width: 64px;
+    height: 63px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: visible;
+}
+header#gnb > .gnb_mid > .mid_content > nav > ul > li > a > .btn_menu > .icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header#gnb > .gnb_mid > .mid_content > nav > ul > li > a > .btn_menu > .icon > i {
+	font-size: 20px;
+	color: rgb(99, 114, 131);
+}
+header#gnb > .gnb_mid > .mid_content .btn_menu > .txt_menu {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    height: 18px;
+}
+
+header#gnb > .gnb_mid > .mid_content > .icon-box {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header#gnb > .gnb_mid > .mid_content > .icon-box > .btn_search {
+    overflow: hidden;
+    color: rgb(99, 114, 131);
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-flex;
+    position: relative;
+    font-size: 22px;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    opacity: 1;
+    vertical-align: middle;
+}
+header#gnb > .gnb_mid > .mid_content > .icon-box > .btn_search > div > i {
+    font-size: 18px;
+}
+header#gnb > .gnb_mid > .mid_content > .icon-box > .side-menu {
+	position: relative;
+}
+header#gnb > .gnb_mid > .mid_content > .icon-box > .side-menu > .btn_side-menu {
+    overflow: hidden;
+    color: rgb(99, 114, 131);
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: inline-flex;
+    position: relative;
+    font-size: 22px;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    opacity: 1;
+    vertical-align: middle;
+}
+header#gnb > .gnb_mid > .mid_content > .icon-box > .side-menu > .btn_side-menu > div > i {
+    font-size: 18px;
+}
+header#gnb > .gnb_mid > .mid_content > .icon-box > .btn_profile {
+    position: relative;
+    cursor: pointer;
+    border-radius: 9999px;
+    margin-left: 14px;
+    overflow: visible;
+}
+header#gnb .img_profile {
+	
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 0px 1px inset;
+    overflow: visible;
+}
+
+header#gnb .img_profile img{
+	top:0px;
+	left:0px;
+	width: 40px;
+    height: 40px;
+ 	object-fit: cover;
+ 	position: absolute;
+ 	border-radius: 9999px;
+}
+
+/* gnb_bot */
+header#gnb > .gnb_bot {
+    border-top: 1px solid rgb(243, 245, 246);
+    width: 100%;
+    visibility: visible;
+}
+header#gnb > .gnb_bot > .bot_content{
+    height: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 36px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* home�뿉�꽌 蹂댁씠�뒗 div */
+header#gnb > .gnb_bot > .bot_content > .box_welcome {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+header#gnb > .gnb_bot > .bot_content > .box_welcome > .txt_welcome {
+	color: rgb(31, 46, 61);
+    margin-right: 8px;
+    font-size: 20px;
+    font-weight: 1000;
+}
+header#gnb > .gnb_bot > .bot_content > .box_welcome > div > i {
+	font-size: 25px;
+	color: gold;
+}
+
+/* people�뿉�꽌 蹂댁씠�뒗 div */
+header#gnb > .gnb_bot > .bot_content > .box_people {
+    display: flex;
+    align-items: center;
+}
+header#gnb  #snb_people {
+	width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 1px inset;
+}
+header#gnb  #snb_people > .item_people {
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    list-style-type: none;
+}
+header#gnb  #snb_people  .btn_people {
+	position: relative;
+    overflow: hidden;
+    color: rgb(139, 152, 167);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 9px;
+    display: flex;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-weight: 800;
+    line-height: 18px;
+    align-items: center;
+}
+header#gnb  #snb_people  .btn_people:hover {
+ 	background-color: rgb(247,248,248);
+}
+header#gnb  #snb_people  .icon_people {
+	color: rgb(139, 152, 167);
+    margin-right: 6px;
+    display: inline-flex;
+    align-items: center;
+}
+header#gnb  #snb_people  .icon_people > i {
+	font-size: 15px;
+}
+header#gnb  #snb_people  .line {
+	left: 7px;
+    right: 7px;
+    bottom: 0px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+/* work div */
+header#gnb > .gnb_bot > .bot_content > .box_work {
+    display: flex;
+    align-items: center;
+}
+header#gnb  #snb_work {
+	width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 1px inset;
+}
+header#gnb  #snb_work > .item_people {
+    height: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    list-style-type: none;
+}
+header#gnb  #snb_work  .btn_people {
+	position: relative;
+    overflow: hidden;
+    color: rgb(139, 152, 167);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 9px;
+    display: flex;
+    font-size: 15px;
+    box-sizing: border-box;
+    font-weight: 800;
+    line-height: 18px;
+    align-items: center;
+}
+header#gnb  #snb_work  .btn_people:hover {
+ 	background-color: rgb(247,248,248);
+}
+header#gnb  #snb_work  .icon_people {
+	color: rgb(139, 152, 167);
+    margin-right: 6px;
+    display: inline-flex;
+    align-items: center;
+}
+header#gnb  #snb_work  .icon_people > i {
+	font-size: 15px;
+}
+header#gnb  #snb_work  .line {
+	left: 7px;
+    right: 7px;
+    bottom: 0px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+/* people snb btn_on */
+header#gnb  #snb_people  .btn_on > .btn_people,
+header#gnb  #snb_people  .btn_on > .btn_people > .icon_people {
+	color: rgb(31, 46, 61);
+}
+header#gnb  #snb_people  .btn_on > .line {
+    background-color: rgb(31, 46, 61);
+}
+
+/* work snb btn_on */
+header#gnb  #snb_work  .btn_on > .btn_people,
+header#gnb  #snb_work  .btn_on > .btn_people > .icon_people {
+	color: rgb(31, 46, 61);
+}
+header#gnb  #snb_work  .btn_on > .line {
+    background-color: rgb(31, 46, 61);
+}
+
+
+/* side menu modal */
+header#gnb  #modal_side-menu {
+    width: 240px;
+    min-width: 148px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(20 20 20 / 16%) 4px 16px 36px 0px, rgb(20 20 20 / 12%) 0px 4px 8px 0px;
+    z-index: 10;
+}
+header#gnb  #modal_side-menu > .box_side-menu {
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+header#gnb  #modal_side-menu  .btn_account {
+	position: relative;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 0px 14px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+}
+header#gnb  #modal_side-menu  .icon_account {
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+header#gnb  #modal_side-menu  .icon_account > i {
+	color: rgb(31, 46, 61);
+    font-size: 18px;
+}
+header#gnb  #modal_side-menu  .txt_account {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    display: flex;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+}
+header#gnb  #modal_side-menu  .btn_logout {
+	position: relative;
+    overflow: hidden;
+    color: rgb(195, 29, 29);
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0px;
+    padding: 0px 14px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: center;
+}
+header#gnb  #modal_side-menu  .icon_logout {
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+header#gnb  #modal_side-menu  .icon_logout > i {
+	color: rgb(195, 29, 29);
+    font-size: 18px;
+}
+header#gnb  #modal_side-menu  .txt_logout {
+	padding-top: 9px;
+    padding-bottom: 9px;
+    display: flex;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+}
+
+header#gnb  #modal_side-menu  .btn_account:hover,
+header#gnb  #modal_side-menu  .btn_logout:hover {
+	cursor: pointer;
+	background-color: rgb(247,248,248);
+}
+
+/* modal logout */
+header#gnb  #modal_logout {
+	width: calc(100% - 72px);
+    height: auto;
+    max-width: 420px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+	z-index: 999;
+    position: fixed;
+    box-sizing: border-box;
+    flex-direction: column;
+    box-shadow: rgb(20 20 20 / 16%) 4px 16px 36px 0px, rgb(20 20 20 / 12%) 0px 4px 8px 0px;
+    overflow: hidden;
+}
+header#gnb  #modal_logout > .modal_content_logout {
+    min-height: 250px;
+    padding: 36px 36px 95px;
+    box-sizing: border-box;
+}
+header#gnb  #modal_logout  .head_modal {
+	margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+header#gnb  #modal_logout  .icon_modal {
+    margin-right: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+header#gnb  #modal_logout  .icon_modal > i {
+	color: rgb(240, 72, 0);
+    font-size: 20px;
+}
+header#gnb  #modal_logout  .txt_modal {
+	color: rgb(31, 46, 61);
+    font-size: 20px;
+    font-weight: 500;
+}
+header#gnb  #modal_logout  .box_btn {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 38px;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-end;
+}
+header#gnb  #btn_cancel_m {
+	overflow: hidden;
+    color: rgb(58, 80, 100);
+    height: 44px;
+    cursor: pointer;
+    min-width: 56px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    vertical-align: middle;
+}
+header#gnb  #btn_cancel_m:hover {
+	background-color: rgb(238,240,240);
+}
+header#gnb  #btn_cancel_m > div {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+header#gnb  #btn_logout_m {
+	overflow: hidden;
+    color: rgb(255, 255, 255);
+    height: 44px;
+    cursor: pointer;
+    min-width: 68px;
+    max-width: 100%;
+    border-radius: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: rgb(255, 83, 9);
+    display: inline-flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 4px 0px;
+    vertical-align: middle;
+}
+header#gnb  #btn_logout_m:hover {
+	background-color: rgb(240,72,0);
+}
+header#gnb  #btn_logout_m > div {
+	width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+header#gnb .sub_modal_overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}

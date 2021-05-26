@@ -1,0 +1,139 @@
+
+
+#close img {
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+}
+
+header#gnb  .second_container .div1 {
+	height: 8%;
+	box-shadow: rgb(0 0 0/ 4%) 0px -1px 0px 0px inset;
+}
+
+header#gnb  .second_container .div2 {
+	height: 800px;
+}
+
+header#gnb  .div2 {
+	overflow: auto;
+	height: 100%;
+}
+
+header#gnb  .div2 div {
+	text-align: left;
+}
+
+header#gnb  .salary_HR_management {
+	height: 50px;
+	margin-top: 50px;
+	color: rgb(31, 46, 61);
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	z-index: 999;
+}
+
+header#gnb  .empty {
+	width: 82%;
+}
+
+header#gnb  .salary_default_Info {
+	height: 50px;
+	position: relative;
+	color: rgb(31, 46, 61);
+	font-size: 20px;
+	z-index: 999;
+	font-weight: 500px;
+	font-weight: bold;
+}
+
+header#gnb  .salary_deduction {
+	height: 50px; position : relative;
+	color: rgb(31, 46, 61);
+	font-size: 20px;
+	z-index: 999;
+	font-weight: bold;
+	position: relative;
+}
+
+
+header#gnb  .salary_list {
+	width: 85%;
+	margin: auto;
+	height: 900px;
+	position: static;
+}
+
+header#gnb  .salary_header {
+	text-align: left;
+	line-height: 68px;
+	width: 85%;
+	margin: auto;
+	height: 68px;
+	cursor: pointer;
+	font-size: 13px;
+	display: flex;
+}
+
+header#gnb  .salary_header>div>a {
+	color: rgb(54, 69, 84);
+}
+
+header#gnb  .salary_header>div:last-child {
+	color: rgb(139, 152, 167);
+	display: flex;
+	margin-left: 490px;
+}
+
+header#gnb  .salary_header>div:last-child div {
+	width: 70px;
+}
+
+
+header#gnb  .header a {
+	text-decoration: none;
+	color: rgb(54, 69, 84);
+}
+
+header#gnb  .salary_line1 {
+	border-bottom: 6px solid rgb(255, 224, 102);
+	position: relative;
+	z-index: 1;
+	top: -32px;
+	width: 35px;
+	font-weight: bold;
+	left: 2px;
+}
+
+header#gnb  .salary_line2 {
+	border-bottom: 6px solid rgb(255, 224, 102);
+	position: relative;
+	z-index: 1;
+	top: -32px;
+	width: 78px;
+	font-weight: bold;
+}
+
+header#gnb  .salary_line3 {
+	border-bottom: 6px solid rgb(255, 224, 102);
+	position: relative;
+	z-index: 1;
+	top: -32px;
+	width: 78px;
+	font-weight: bold;
+}
+
+
+header#gnb  .salary_box {
+	height: 190px; color : rgb( 139, 152, 167);
+	border-radius: 8px;
+	padding-top: 42px;
+	padding-bottom: 54px;
+	background-color: rgb(252, 252, 252);
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	flex-direction: column;
+	color: rgb(139, 152, 167);
+}

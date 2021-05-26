@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.itbank.working.WorkingDAO">
+	
+	<insert id="insertWorkingInfo" parameterType="work">
+		insert into working_info(emp_num, today_date, working_time)
+    		values(#{emp_num}, #{today_date}, #{working_time})
+	</insert>
+	
+	<select id="selectWorking" parameterType="work" resultType="work">
+		select * from working_info
+			where emp_num=#{emp_num} and today_date=#{today_date}
+	</select>
+	
+	<update id="updateOffWork" parameterType="work">
+		update working_info set off_work=#{off_work}
+    		where emp_num=#{emp_num} and today_date=#{today_date}
+	</update>
+	
+	
+
+	<!-- 요번주 근무 총합 -->
+	<select id="allWork" resultType="String" parameterType="hashmap">
+		select sum(total_working) from working_info where emp_num=#{emp_num} and today_date between #{firstStart} and #{lastStart}
+	</select>
+	
+	<!-- 이번주 스케줄 리스트로 뽑아옴 -->
+	<select id="getSchedule" resultType="work" parameterType="hashmap">
+		select * from working_info where emp_num=#{emp_num} and today_date between #{firstStart} and #{lastStart}
+	</select>
+	
+	<select id="getTeamCount" resultType="String"> <!-- 자신의팀 총인원수 뽑는거 -->
+		select count(*) from employee_table where emp_dept=#{emp_dept}
+	</select>
+	
+	<!-- 자신의 팀(EX인사팀) 구성원들의 한달 스케줄  -->
+	<select id="getWorkOff" resultType="wh" parameterType="dat">
+		select E.emp_name,E.emp_num,E.emp_dept,W.working_time,W.off_work,W.today_date from employee_table E, working_info W
+	   		where E.emp_num = W.emp_num and E.emp_dept='${empdept}' and W.today_date between '${year},${month},${firstDay}' and '${year},${month},${lastDay}' order by w.today_date,e.emp_name
+	</select>
+	<select id="allEx" resultType="String" parameterType="hashmap">
+		select sum(excess_allow) from working_info where emp_num=#{emp_num} and today_date between #{firstStart} and #{lastStart}
+	</select>
+		
+</mapper>
+
+
+
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+		"-//mybatis.org//DTD Config 3.0//EN" 
+		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+		
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<setting name="useGeneratedKeys" value="false" />
+		<setting name="mapUnderscoreToCamelCase" value="false" />
+	</settings>
+	
+	<typeAliases>
+		<typeAlias type="com.itbank.employee.EmployeeDTO" alias="emp" />
+		<typeAlias type="com.itbank.working.WorkingDTO" alias="work" />
+		<typeAlias type="com.itbank.notice.NoticeDTO" alias="noti" />
+		<typeAlias type="com.itbank.worktodo.WorktodoDTO" alias="worktodo" />
+		<typeAlias type="com.itbank.sub.VacationDTO" alias="vacation" />
+		<typeAlias type="com.itbank.working.DateDTO" alias="dat" />		
+		<typeAlias type="com.itbank.working.WorkHoliDTO" alias="wh" />
+		<typeAlias type="com.itbank.workFlow.ReqeustDTO" alias="ReqeustDTO" />
+		<typeAlias type="com.itbank.workFlow.WFlowEquiDTO" alias="WFlowEquiDTO" />
+		<typeAlias type="com.itbank.workFlow.WflowAnnualDTO" alias="WflowAnnualDTO" />
+		<typeAlias type="com.itbank.workFlow.storegeDTO" alias="storage" />
+	</typeAliases>
+</configuration>

@@ -1,0 +1,201 @@
+
+header#gnb  .second_container_3 {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+header#gnb  .second_container_3 .div1 {
+    height: 8%;
+    box-shadow: rgb(0 0 0 / 4%) 0px -1px 0px 0px inset;
+}
+
+header#gnb  .second_container_3 .div2 {
+    height: 92%;
+}
+
+header#gnb  .def_info_con{
+    width: 85%;
+    height: 80%;
+    margin: auto;
+}
+
+header#gnb  .def_profile {
+    margin: auto;
+    width: 781px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header#gnb  .def_img {
+    width: 128px;
+    height: 128px;
+}
+
+header#gnb  .def_img img{
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+header#gnb  .pen_div_1 {
+    position: absolute;
+    top: 220px;
+    right: 430px;
+    background-color: white;
+    width: 38px;
+    height: 38px;
+    z-index: 1;
+    border-radius: 19px;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 2px 0px, 
+    rgb(0 0 0 / 12%) 0px 0px 0px 1px inset;
+}
+
+header#gnb  .pen_div_1 i {
+    font-size: 17px;
+    color: rgb(197, 204, 211);
+    padding-right: 5px;
+    margin-top: 5px;
+}
+header#gnb  .pen_div_1:hover{
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 15%) 0px 1px 2px 0px, 
+    rgb(0 0 0 / 12%) 0px 0px 0px 1px inset;
+    background-color: rgb(242, 246, 248);
+}
+
+
+header#gnb  .clickList_2 {
+    border-radius: 10px;
+    position: absolute;
+    width: 180px;
+    height: 90px;
+    background-color: white;
+    box-shadow: 3px 3px 20px rgb(0 0 0 / 30%);
+    right: 600px;
+    top: 322px;
+    z-index: 999;
+}
+
+header#gnb  .clickList_2 > ul{
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+}
+header#gnb  .clickList_2 > ul > li{
+    
+    height: 45px;
+    line-height: 45px;
+    color: rgb(31, 46, 61);
+    font-weight: bold;
+    padding-left: 15px;
+  
+}
+
+header#gnb  .clickList_2 li:hover{
+    cursor: pointer;
+    background-color: rgb(242, 246, 248);
+
+}
+
+header#gnb  .clickList_2 i {
+    margin-right: 10px;
+}
+header#gnb  .def_con{
+    text-align: left;
+}
+
+header#gnb  .def_info_div1{
+    text-align: left;
+    font-weight: bold;
+    color: rgb(31, 46, 61);
+    font-size: 20px;
+}
+
+header#gnb  .HR_line4{
+   box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(177, 177, 177, 0.02);
+    margin-top: 6px;
+}
+
+header#gnb  .HR_line4 input {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    width: 300px;
+    height: 20px;
+    padding-top: 13px;
+}
+header#gnb  .HR_line4:hover{
+   box-shadow: rgb(197 204 211 / 50%) 0px 0px 0px 2px inset;
+}
+
+header#gnb  .HR_line4  input::placeholder {
+    color: rgb(139, 152, 167);
+}
+
+header#gnb  .input_box3{
+    position: relative;
+    margin-left: 6px;
+    
+}
+header#gnb  .input_box3 input{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+header#gnb  .input_box3 input{
+    width: 730px;
+}
+
+header#gnb  .input_box4{
+    position: relative;
+    margin-left: 6px;
+    
+}
+header#gnb  .input_box4 input{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+header#gnb  .input_box4 input{
+    width: 200px;
+}
+
+header#gnb  .input_box{
+    position: relative;
+    margin-left: 6px;
+    
+}
+header#gnb  .input_box input{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+header#gnb  .input_box input{
+    width: 750px;
+}
+
+
+header#gnb  .input_box5{
+    position: relative;
+    margin-left: 6px;
+    
+}
+header#gnb  .input_box5 input{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+header#gnb  .input_box5 input{
+    width: 550px;
+}
+
+header#gnb  .click_profile button{
+    outline: none;
+    border: none;
+}

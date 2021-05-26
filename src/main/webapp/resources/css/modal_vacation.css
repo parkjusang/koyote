@@ -1,0 +1,276 @@
+* { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
+
+header#gnb  .HR_management1 {
+    height: 380px;
+    margin-top: 50px;
+    color: rgb(31, 46, 61);
+    font-size: 20px;
+    font-weight: 500px;
+    font-weight: bold;
+
+}
+header#gnb  .HR_management1 > div {
+    height: 45px;
+}
+
+header#gnb  .HR_management1 div:first-child {
+    display: flex;
+    position: relative;
+    z-index: 99;
+}
+
+header#gnb  .day_box{
+	width: 100%;
+	height: 140px;
+	display:flex;
+	margin-top: 10px;
+	align-items: center;
+ 	justify-content: left;
+	
+}
+
+header#gnb  .day_month1{
+	font-size:38px;
+	font-weight: bold;
+}
+
+header#gnb  .day_month2{
+	
+	font-size:32px;
+	font-weight: bold;
+}
+
+header#gnb  .day_month3{
+	
+    font-size: 13px;
+    font-weight: 400;
+	padding-right:560px;
+	color: rgb(31, 46, 61);
+}
+
+header#gnb  .day_empty{
+    width: 1px;
+    height: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: rgb(197, 204, 211);
+}
+
+ header#gnb  .week{
+ 	
+     border-radius:10px; 
+     width: 65px;
+     margin-left:18px;
+     margin-right:18px;
+     height: 37px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 13px;
+     font-weight: bold;
+     
+     
+ }
+
+ header#gnb  .week:hover{
+     background-color:rgb(239, 239, 239);
+ }
+ 
+ header#gnb  .fa-angle-left{
+ 	color: rgb(99, 114, 131);
+	cursor: not-allowed; 	
+	opacity: 0.4;
+ 
+ }
+ 
+ header#gnb  .fa-angle-right{
+ 	color: rgb(99, 114, 131);
+ 	cursor: not-allowed;
+ 	opacity: 0.4;
+ }
+
+
+header#gnb  .modal_vacation_line {
+
+    border-bottom: 6px solid rgb(255, 224, 102);
+    position: relative;
+    z-index: 1;
+    top: -20px;
+    width: 71px;
+    font-weight: bold;
+    left: -72px;
+
+}
+
+header#gnb  .div2_list1 {
+    width: 85%;
+    margin: auto;
+    height: 100%;
+    position: static;
+}
+
+
+header#gnb  .second_container .div {
+    height: 50%;
+    top:10px;
+    left:200px;
+ }
+ 
+header#gnb  .va_question_con{
+    position: relative;
+    height: 20px;
+    top: 18px;
+    left: -520px;
+}
+
+header#gnb  .question_icon{
+	position: absolute;
+	margin: auto;
+	
+}
+
+
+header#gnb  .num{
+
+    width: 561px;
+    border-bottom: 1px solid rgb(241, 237, 237);
+    text-align: left;
+    margin-top: 15px;
+}
+
+header#gnb  .note{
+    display:flex;
+    align-content:center;
+    justify-content:left;
+    color: rgb(139, 152, 167);
+    width: 561px;
+    border-bottom: 1px solid  rgb(241, 237, 237);
+    margin-top: 10px;
+}
+
+
+header#gnb  .box_list > div{
+    display: flex;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 50px;
+}
+
+
+header#gnb  .v_parent_box{
+	width: 100px;
+	height: 30px;
+	margin-right:60px;
+	display:flex;
+    align-content:center;
+	margin-top:10px;
+	color: rgb(99, 114, 131);
+}
+
+header#gnb  .list_style{
+  font-size:10.5pt;
+  font-weight: 400;
+}
+
+
+ header#gnb  .list_style >a{
+	  text-decoration: none;
+	  color: rgb(99, 114, 131);
+	  font-weight: bold;
+ }
+
+header#gnb  .va_room
+{
+	display:none;
+    width: 120px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: -131px;
+}
+
+header#gnb  .va_room:after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+}
+
+header#gnb  .va_question_con:hover .va_room{
+    display: block;
+}
+
+
+header#gnb  .work_more1_va{    overflow: hidden;
+    color: rgb(54, 69, 84);
+    height: 38px;
+    cursor: not-allowed;
+    max-width: 100%;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    position: relative;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-weight: 400;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 0.5;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 2px 0px, rgb(0 0 0 / 12%) 0px 0px 0px 1px inset;
+    vertical-align: middle;
+     margin-left: 610px;
+}
+
+header#gnb  .work_more2_va{
+	
+    overflow: hidden;
+    color: rgb(54, 69, 84);
+    height: 38px;
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-left: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(255, 224, 102);
+    display: inline-flex;
+    position: relative;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-weight: 400;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 4px 0px;
+    vertical-align: middle;
+	
+}
+
+header#gnb  .work-more2-icon{
+	color: rgb(54, 69, 84);
+    margin-right: -6px;
+    margin-left: 4px;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 300;
+    -webkit-box-align: center;
+    align-items: center;
+    opacity: 0.5;
+}

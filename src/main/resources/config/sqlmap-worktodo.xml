@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.itbank.worktodo.WorktodoDAO">
+	
+	
+	<select id="selectWorktodoList" parameterType="int" resultType="worktodo">
+		select T.table_name, A.sender, A.sender_num, E.emp_profile, A.recipient, A.recipient_num, A.req_date, null as req_field, null as req_content from annual_table A, employee_table E, tabs T
+		    where A.approval = '미승인' and A.sender_num = E.emp_num and T.table_name = 'ANNUAL_TABLE' and A.recipient_num = #{num}
+		    
+		UNION ALL
+		
+		select T.table_name, Q.sender, Q.sender_num, E.emp_profile, Q.recipient, Q.recipient_num, Q.req_date, null as req_field, null as req_content from equipment_table Q, employee_table E, tabs T
+		    where Q.approval = '미승인' and Q.sender_num = E.emp_num and T.table_name = 'EQUIPMENT_TABLE' and Q.recipient_num = #{num}
+		
+		UNION ALL
+		
+		select T.table_name, R.sender, R.sender_num, E.emp_profile, R.recipient, R.recipient_num, R.req_date, R.req_field, R.req_content from equi_req_table R, employee_table E, tabs T
+		    where write_check = 0 and R.sender_num = E.emp_num and T.table_name = 'EQUI_REQ_TABLE' and R.recipient_num = #{num}
+		
+		order by req_date
+	</select>
+
+	
+</mapper>
+
+
+
+
+

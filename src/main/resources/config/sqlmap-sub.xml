@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.itbank.sub.SubDAO">
+	
+	<select id="selectDeptList" resultType="hashmap">
+		select * from department_table order by dept_no
+	</select>
+	
+	<select id="selectPosList" resultType="hashmap">
+		select * from position_table order by pos_no
+	</select>
+	
+	<select id="selectBankList" resultType="hashmap">
+		select * from bank_table order by idx
+	</select>
+	
+	<select id="selectDeptOne" resultType="String">
+		select dept_no from department_table 
+			where dept_name = #{dept_name}
+	</select>
+	
+	<select id="selectPosOne" resultType="String">
+		select pos_no from position_table 
+			where pos_name = #{pos_name}
+	</select>
+	
+<!-- 	<select id="departListselect" resultType="dept">
+		select * from department_table 
+			order by dept_no
+	</select> -->
+
+	
+</mapper>
+
+
+
+
+

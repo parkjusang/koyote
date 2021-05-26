@@ -1,0 +1,648 @@
+@charset "utf-8";
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+header {
+	top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 64px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    box-shadow: rgb(20 20 20 / 7%) 0px 1px 3px 0px, rgb(20 20 20 / 4%) 2px 4px 12px 0px;
+}
+header  .title_add {
+    color: rgb(31, 46, 61);
+    width: 100%;
+    height: 64px;
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+}
+header  .box_close {
+	left: 0px;
+    height: 64px;
+    padding-left: 16px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+header  #btn_close {
+	overflow: hidden;
+    color: rgb(31, 46, 61);
+    height: 38px;
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    position: relative;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    vertical-align: middle;
+}
+header  #btn_close > div {
+	width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+header  .icon_close {
+	margin-right: 5px;
+    margin-left: -4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+}
+header  .icon_close > i {
+    font-size: 18px;
+}
+header  .close {
+	display: flex;
+    align-items: center;
+}
+
+main {
+	width: 100%;
+    padding-top: 64px;
+    padding-bottom: 192px;
+    background-color: rgb(255, 255, 255);
+}
+main  .container {
+    min-width: 560px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 36px;
+    box-sizing: border-box;
+}
+main  .head_add {
+	position: relative;
+}
+main  .head_add > div {
+	margin: 0px;
+    padding-top: 75px;
+    padding-bottom: 0px;
+    position: relative;
+}
+main  .title_head {
+    color: rgb(54, 69, 84);
+    display: flex;
+    font-size: 36px;
+    align-items: center;
+    letter-spacing: -1px;
+}
+main  .title_head > div {
+	cursor: default;
+    min-width: 0px;
+    border-radius: 0px;
+    display: flex;
+    flex-grow: 1;
+    font-weight: 700;
+    align-items: center;
+}
+main  .title_sub {
+	line-height: 1.55;
+    color: rgb(99, 114, 131);
+    max-width: 600px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 800;
+}
+main  .icon_write {
+	top: 62px;
+    right: 0px;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+main  .icon_write > i {
+	font-size: 70pt;
+	color: yellow;
+}
+
+main  .info_basic,
+main  .info_contract {
+	color: rgb(31, 46, 61);
+    padding-top: 44px;
+    padding-bottom: 16px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 1000;
+    line-height: 28px;
+    align-items: center;
+    letter-spacing: -0.5px;
+}
+main  .info_basic > .box_title,
+main  .info_contract > .box_title {
+    display: inline-block;
+    position: relative;
+}
+main  .info_basic  .line,
+main  .info_contract  .line {
+    left: 0px;
+    bottom: 2px;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(255, 224, 102);
+    position: absolute;
+}
+main  .title_basic,
+main  .title_contract {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+main  .box_type1 {
+	height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 14px;
+    padding-right: 12px;
+    background-color: rgba(99, 114, 131, 0.02);
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+}
+main  .icon_name, main  .icon_email,
+main  .icon_enter, main  .icon_no,
+main  .icon_dept, main  .icon_birthnum,
+main  .icon_pnum, main  .icon_addr {
+    display: flex;
+    flex-grow: 0;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+}
+main  .icon_name > i {
+	margin-right: 12px;
+	color: rgb(139, 152, 167);
+	font-size: 15px;
+}
+main  .icon_birthnum > i,
+main  .icon_enter > i,
+main  .icon_addr > i ,
+main  .icon_email > i {
+	margin-right: 12px;
+	color: rgb(139, 152, 167);
+	font-size: 18px;
+}
+main  .icon_pnum > i {
+	margin-right: 10px;
+	color: rgb(139, 152, 167);
+	font-size: 18px;
+}
+main  .box_input {
+    height: 100%;
+    padding-top: 16px;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    box-sizing: border-box;
+    align-items: center;
+    flex-shrink: 1;
+}
+main  .input_type_c {
+    color: rgb(31, 46, 61);
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: inherit;
+    box-sizing: border-box;
+    text-align: left;
+    outline: none;
+}
+main  label {
+    top: 50%;
+    left: 0px;
+    color: rgb(139, 152, 167);
+    display: flex;
+    pointer-events: none;
+    position: absolute;
+    font-size: 14px;
+    transform: translateY(-50%);
+    font-weight: 800;
+    transition: all 0.24s ease 0s;
+    transform-origin: left top;
+}
+main  .label_on {
+	top: 18px;
+	transform: translateY(-50%)	scale(0.75);
+}
+
+main  .box_warning {
+	color: rgb(139, 152, 167);
+	padding: 0px 0px 15px;
+	margin-top: -5px;
+    display: flex;
+    font-weight: 800;
+    align-items: flex-start;
+}
+main  .icon_warning {
+    margin-top: 2px;
+    margin-right: 6px;
+    display: inline-flex;
+    align-items: center;
+}
+main  .icon_warning > i {
+    color: rgb(139, 152, 167);
+    font-size: 15px;
+}
+main  .txt_warning {
+	line-height: 1.55;
+    display: inline-flex;
+    font-size: 13px;
+    align-items: center;
+}
+
+main  .box_emp {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    box-sizing: border-box;
+}
+main  .box_no {
+	max-width: 50%;
+    flex-basis: 50%;
+	height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 14px;
+    padding-right: 12px;
+    background-color: rgba(99, 114, 131, 0.02);
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+	
+}
+main  .box_pos {
+    max-width: 50%;
+    flex-basis: 50%;
+	height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 14px;
+    padding-right: 12px;
+    background-color: rgba(99, 114, 131, 0.02);
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+}
+main  .box_dept > .box_input:hover, 
+main  .box_dept > .box_input > input:hover,
+main  .box_pos > .box_input:hover, 
+main  .box_pos > .box_input > input:hover,
+main  .box_pos > .box_input  i:hover {
+	cursor: pointer;
+}
+main  .icon_no > i {
+    margin-right: 12px;
+    color: rgb(139, 152, 167);
+    font-size: 17px;
+}
+main  .input_type_r {
+	color: rgb(31, 46, 61);
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: inherit;
+    box-sizing: border-box;
+    text-align: left;
+    outline: none;
+}
+
+main  .input_type_l {
+	color: rgb(31, 46, 61);
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: inherit;
+    box-sizing: border-box;
+    text-align: left;
+    outline: none;
+    text-overflow: ellipsis;
+}
+main  .icon_more {
+    top: 50%;
+    right: 0px;
+    cursor: text;
+    display: inline-flex;
+    position: absolute;
+    transform: translateY(-50%);
+    align-items: center;
+}
+main  .icon_more > i {
+    color: rgb(197, 204, 211);
+    font-size: 16px;
+}
+
+main  .icon_dept > i {
+    color: rgb(139, 152, 167);
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+
+main  .box_boss {
+	display: flex;
+    flex-grow: 0;
+    align-items: center;
+    flex-shrink: 0;
+    right: 0px;
+    color: rgb(139, 152, 167);
+    line-height: 0;
+}
+main  #btn_boss {
+    overflow: hidden;
+    color: rgb(99, 114, 131);
+    width: 104px;
+    height: 50px;
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    vertical-align: middle;
+}
+main  #btn_boss > div {
+	width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+main  #btn_boss  .icon_radio_on,
+main  #btn_boss  .icon_radio_off {
+    margin-right: 5px;
+    margin-left: -4px;
+    display: inline-flex;
+    font-size: 22px;
+    font-weight: 600;
+    align-items: center;
+}
+main  #btn_boss  .icon_radio_on > i {
+    color: rgb(17, 202, 114);
+    font-size: 18px;
+}
+main  #btn_boss  .icon_radio_off > i {
+    color: rgb(197, 204, 211);
+    font-size: 18px;
+}
+main  #btn_boss  .txt_boss {
+    display: flex;
+    align-items: center;
+}
+
+
+main  .box_pay, main  .box_bank,
+main  .box_date {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    box-sizing: border-box;
+}
+main  .box_left {
+	max-width: 66.6667%;
+    flex-basis: 66.6667%;
+	height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 14px;
+    padding-right: 12px;
+    background-color: rgba(99, 114, 131, 0.02);
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+}
+main  .box_pay  .box_input,
+main  .box_bank  .box_input,
+main  .box_date  .box_input {
+    height: 100%;
+    padding-top: 16px;
+    display: flex;
+    position: relative;
+    flex-grow: 1;
+    box-sizing: border-box;
+    align-items: center;
+    flex-shrink: 1;
+}
+main  .box_left  .won {
+	color: rgb(99, 114, 131);
+    font-size: 13px;
+    font-weight: 800;
+}
+main  .box_right {
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+    width: 100%;
+    border: none;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -1px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgba(99, 114, 131, 0.02);
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+}
+main  .box_pay > .box_right:hover,
+main  .box_pay > .box_right  input:hover,
+main  .box_pay > .box_right  i:hover,
+main  .box_bank > .box_right:hover,
+main  .box_bank > .box_right  input:hover,
+main  .box_bank > .box_right  i:hover {
+    cursor: pointer;
+}
+main  .icon_bank,
+main  .icon_pay {
+    display: flex;
+    flex-grow: 0;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+}
+main  .icon_bank > i,
+main  .icon_pay > i {
+    margin-right: 12px;
+    color: rgb(139, 152, 167);
+    font-size: 20px;
+}
+
+main  #btn_add {
+	overflow: hidden;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(17, 202, 114);
+    display: inline-flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 800;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 4px 0px;
+    vertical-align: middle;
+}
+main  .box_add {
+	width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+main  .txt_add {
+    display: flex;
+    align-items: center;
+}
+
+main  .box_effect:focus-within,
+main  .box_effect:hover {
+	box-shadow: rgb(29 56 83 / 20%) 0px 0px 0px 2px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+}
+main  .box_on,
+main  .box_effect:focus-within {
+	background-color: white;
+}
+
+main  .box_error {
+	background-color: rgb(253,243,243);
+	box-shadow: rgb(236 74 99 / 16%) 0px 0px 0px 1px inset, rgb(0 0 0 / 6%) 0px 1px 1px 0px inset;
+}
+
+main  .box_error label,
+main  .box_error i,
+main  .box_error .won {
+	color: red;
+}
+
+
+/* dropdown */
+main .dropdown {
+	position: relative;
+    height: 0px;
+	top: -10px;
+}
+main  .box_dropdown {
+	position: relative;
+	z-index: 10;
+	border-radius: 8px;
+	background-color: white;
+    box-sizing: border-box;
+	box-shadow: 4px 16px 36px 0px rgba(20,20,20,0.16), 0px 4px 8px 0px rgba(20,20,20,0.12);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 200px;
+    overflow: auto;
+}
+main  #dropdown_pos { 
+	left: 50%; 
+	max-width: 50%; 
+}
+main  #dropdown_dept { 
+	left: 0%; 
+	max-width: 100%; 
+}
+main  #dropdown_bank,
+main  #dropdown_std { 
+	left: 66.6667%; 
+	max-width: 33.3333%; 
+}
+main  .box_menu {
+	color: #0053b3;
+	padding-left: 15px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+main  .box_menu:hover {
+    cursor: pointer;
+    background-color: rgba(0,112,209,0.10196078431372549)
+}
+main  .box_dropdown  .txt_menu {
+	font-size: 10pt;
+	font-weight: 800;
+}
+
+/* flatpickr css (달력) */
+main .flatpickr-wrapper {
+    color: rgb(31, 46, 61);
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: inherit;
+    box-sizing: border-box;
+    text-align: left;
+    outline: none;
+}
+
+

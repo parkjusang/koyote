@@ -1,0 +1,75 @@
+
+@media screen and (max-width: 1000px) {
+
+}
+
+@charset "utf-8";
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: -apple-system,BlinkMacSystemFont,Apple SD Gothic Neo,Noto Sans Korean,sans-serif;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+}
+body {
+	background-color: #f3f5f6;
+	width: 100%;
+	font-size: 14px;
+}
+#root {
+	height: 100vh;
+	overflow: auto;
+    color: rgb(31, 46, 61);
+}
+
+a {
+    text-decoration: none;
+}
+li {
+	list-style: none;
+}
+button, input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: inherit;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+.hidden {
+	display: none !important; 
+}
+
+.box {
+    margin-bottom: 14px;
+	border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(20 20 20 / 2%) 2px 8px 12px 0px, rgb(20 20 20 / 2%) 0px 1px 3px 0px;
+}
+

@@ -1,0 +1,34 @@
+/* ===== 활성화하는 메뉴 css ===== */
+
+/* <지금 출근하기> time box 활성 */
+.wrap_home > .right-side  #box_time {
+	display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-size: 32px;
+    font-weight: 400;
+}
+.wrap_home > .right-side  #box_time > span {
+    font-variant-numeric: tabular-nums;
+    color: rgb(197, 204, 211);
+}
+#on_work {
+    color: rgb(255, 255, 255);
+    background-color: rgb(17, 202, 114);
+    box-shadow: rgb(0 0 0 / 8%) 0px 1px 4px 0px;
+}
+#on_work:hover {
+	background-color: rgb(17,196,112);
+}
+#off_work {
+	color: rgb(167, 55, 81);
+    background-color: rgba(207, 68, 101, 0.04);
+    box-shadow: rgb(207 68 101 / 20%) 0px 0px 0px 1px inset, rgb(0 0 0 / 2%) 0px 1px 2px;
+}
+#off_work:hover {
+	background-color: rgb(244,240,241);
+}
+
+/* <예정 스케줄> 예정 스케줄 list 활성 */

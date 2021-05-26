@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="com.itbank.notice.NoticeDAO">
+	
+	<insert id="insertNotice" parameterType="noti">
+		insert into notice_table(emp_num, emp_name, contents)
+			values (#{emp_num}, #{emp_name}, #{contents})
+	</insert>
+	
+	<select id="selectNoticeAll" resultType="noti">
+		select N.*, E.emp_profile from notice_table N, employee_table E
+			where N.del = 0 and N.emp_num = E.emp_num
+			order by createdate desc
+	</select>
+	
+	<update id="deleteNotice">
+		update notice_table 
+			set del = 1 
+			where seq = #{seq}
+	</update>
+	
+</mapper>
+
+
+
+
+

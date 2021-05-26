@@ -1,0 +1,268 @@
+
+
+header#gnb  .second_container_2 {
+    width: 983px;
+    height: 100%;
+    
+}
+
+header#gnb  .second_container_2 .div1 {
+    height: 8%;
+    box-shadow: rgb(0 0 0 / 4%) 0px -1px 0px 0px inset;
+}
+
+header#gnb  .second_container_2 .div2 {
+    height: 92%;
+}
+
+
+header#gnb  .header_2 {
+    text-align: left;
+    line-height: 68px;
+    width: 85%;
+    margin: auto;
+    height: 68px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    
+
+}
+
+header#gnb  .back{
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    border-radius: 11px;
+}
+
+header#gnb  .back:hover{
+    background-color: #f3f5f6;
+}
+
+header#gnb  .back:active{
+    background-color: #ced0d1;
+}
+
+header#gnb  .header_2 a {
+    text-decoration: none;
+    color: rgb(54, 69, 84);
+}
+
+header#gnb  .header_box{
+    display: flex;
+}
+
+header#gnb  .empty_2{
+    margin-left: 55%;
+}
+
+header#gnb  .cancle_def{
+    margin-left: 80px;
+    text-align: center;
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 7px;
+    height: 24px;
+    width: 40px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
+    padding: 6px;
+    font-weight: bold;
+}
+header#gnb  .cancle_def:hover{
+    background-color: #f3f5f6;
+}
+
+header#gnb  .cancle_def:active{
+    background-color: #ced0d1;
+    
+}
+
+header#gnb  .fixed{
+    width: 72px;
+    margin: auto;
+    line-height: 35px;
+    border-radius: 8px;
+    padding: 2px 12px 2px 12px;
+    background-color: rgb(8, 126, 247);
+    color: white;
+    font-weight: bold;
+}
+
+header#gnb  .fixed1{
+    width: 72px;
+    margin: auto;
+    line-height: 35px;
+    border-radius: 8px;
+    padding: 2px 12px 2px 12px;
+    background-color: rgb(8, 126, 247);
+    color: white;
+    font-weight: bold;
+}
+
+header#gnb  .HR_info_container{
+    width: 85%;
+    height: 80%;
+    margin: auto;
+}
+header#gnb  .HR_info {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top:50px;
+    padding-bottom: 10px;
+}
+
+header#gnb  .emp_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+header#gnb  .HR_box{
+    width: 50%;
+}
+
+header#gnb  .HR_display{
+    display: flex;
+    align-items: center;
+}
+
+
+header#gnb  .HR_line{
+	box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(177, 177, 177, 0.02);
+    margin-top: 6px;
+}
+
+header#gnb  .HR_line input {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    width: 300px;
+    height: 20px;
+    padding-top: 13px;
+}
+header#gnb  .HR_line:hover{
+   box-shadow: rgb(197 204 211 / 50%) 0px 0px 0px 2px inset;
+}
+
+header#gnb  .HR_line  input::placeholder {
+    color: rgb(139, 152, 167);
+}
+
+header#gnb  .HR_icon{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(139, 152, 167);
+    font-size: 17px;
+}
+
+
+header#gnb  .HR_line_1{
+	box-shadow: rgb(29 56 83 / 8%) 0px 0px 0px 1px inset, rgb(0 0 0 / 4%) 0px 1px 1px 0px inset;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(177, 177, 177, 0.02);
+    margin-top: 10px;
+    border-radius: 11px;
+    position: relative;
+}
+
+header#gnb  .HR_line_1 input{
+    border: none;
+    outline: none;
+    font-weight: bold;
+    width: 300px;
+    height: 40px;
+    
+}
+
+header#gnb  .HR_line_1:hover{
+	box-shadow: rgb(197 204 211 / 50%) 0px 0px 0px 2px inset;
+    
+}
+
+
+label {
+    top: 50%;
+    left: 0px;
+    color: rgb(139, 152, 167);
+    display: flex;
+    pointer-events: none;
+    position: absolute;
+    font-size: 14px;
+    transform: translateY(-50%);
+    font-weight: 800;
+    transition: all 0.24s ease 0s;
+    transform-origin: left top;
+}
+header#gnb  .label_on {
+   top: 18px;
+   transform: translateY(-50%)   scale(0.75);
+}
+
+header#gnb  .input_box{
+    position: relative;
+    margin-left: 11px;
+    
+}
+header#gnb  .input_box input{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+header#gnb  .input_box3{
+    position: relative;
+    left: 8px;
+}
+header#gnb  .input_box3 input{
+       margin-top: -1px;
+    padding-top: 25px;
+    height: 13px;
+}
+
+
+
+header#gnb  .text_box{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(139, 152, 167);
+    padding-left: 14px;
+    padding-right: 3px;
+}
+
+#profile_file{
+    width: 140px;
+    top :10px;
+    background-color: rgb(211, 209, 209);
+    opacity: 0%;
+    position:absolute; 
+}
+
+#profile_file1{
+    width: 140px;
+    top :10px;
+    background-color: rgb(211, 209, 209);
+    opacity: 0%;
+    position:absolute; 
+
+
+}
+header#gnb  .departMent_con{
+    position: relative;
+}
+
+
+

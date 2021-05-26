@@ -1,0 +1,176 @@
+span{
+    padding: 0;
+    margin: 0;
+}
+.chModal {
+	cursor:not-allowed;
+    overflow: hidden;
+    color: rgb(183, 40, 40);
+    height: 44px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-left: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-color: rgba(227, 49, 49, 0.07);
+    display: inline-flex;
+    position: relative;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-weight: 400;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    -webkit-box-pack: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+/* .chModal:hover{ */
+/*     background-color: rgba(183, 40, 40,0.10); */
+/* } */
+/* .chModal:active{ */
+/*     background-color: rgba(183, 40, 40,0.2); */
+/* } */
+
+/* .ss{ */
+/*     border: 1px solid black; */
+/* } */
+.textBoxcheck{
+    width: 450px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 1vh;
+}
+
+.textBoxcheck ::-webkit-input-placeholder{
+    outline: none;
+}
+
+
+.checkInCon input[type="text"]{
+    width: 100%;
+    background-color: inherit;
+    margin-left: 10px;
+}
+
+.textBoxCh{
+    width: 270px;
+    margin: auto;
+    position: relative;
+}
+
+.chColor1{
+    color: black;
+    font-weight: 600;
+}
+
+
+.chColor2{
+    color: rgb(99, 114, 131);
+    font-weight: 400;
+}
+.chcommand{
+    display: flex;
+}
+.techeck{
+    position: absolute;
+    left: 35px;
+    font-size: 11px;
+    z-index: 999;
+    font-family: 300;
+    color: white;
+    top: 4px;
+}
+.roundBox{
+    border: 0.3px solid white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 31px;
+    top: 2px;
+    z-index: 1;
+    background-color: rgb(0, 175, 94);
+
+}
+.apply_img1{
+    border-radius:50px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.apply_img1 img {
+    border-radius:50px;
+    object-fit: cover;
+    width: 36px;
+    height: 36px;
+}
+.commendCh{
+    margin-top: 4px;
+    cursor: default;
+    text-align: left;
+    font-size: 14px;
+    color:  rgb(31, 46, 61);
+}
+.comSub{
+    color: rgb(99, 114, 131);
+    font-weight: 400;
+    font-size: 12px;
+}
+.commendf{
+    font-size: 14px;
+    color: rgb(99, 114, 131);
+    font-weight: 400;
+}
+
+
+.fr-view1{
+    color: rgb(31, 46, 61);
+    line-height: 1.7;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+
+.fix_input_box_con1{
+    height: 24px;
+    width: 720px;
+}
+
+
+
+.storaModel {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+}
+
+
+
+.storaModel_overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.storaModel_con{
+    height: auto;
+    max-width: 1040px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    box-shadow: rgb(20 20 20 / 16%) 4px 16px 36px 0px, rgb(20 20 20 / 12%) 0px 4px 8px 0px;
+    overflow: hidden;
+    width: calc(100% - 72px);
+}

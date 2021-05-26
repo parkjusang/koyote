@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+		"-//mybatis.org//DTD Mapper 3.0//EN" 
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<!-- 비품 연차 !!!!!!!!!!! -->
+<mapper namespace="com.itbank.workFlow.WFlowDAO">
+
+	<select id="getAdminList" resultType="emp">
+		 select * from employee_table 
+                    where emp_head = 1
+	</select>
+	
+	<insert id="insertEquiList" parameterType="WFlowEquiDTO">
+			insert into equipment_table 
+			(equip_name,equip_info,equip_amount,equip_cost,equip_sumcost,equip_why,sender,recipient,sender_num,recipient_num)
+			values(#{equip_name},#{equip_info},	#{equip_amount},#{equip_cost},#{equip_sumcost},#{equip_why},#{sender},#{recipient},#{sender_num},#{recipient_num})
+
+	</insert> 
+	
+	<insert id="insertReqEqui" parameterType="ReqeustDTO">
+		insert into EQUI_REQ_TABLE ( SENDER,RECIPIENT,REQ_CONTENT,REQ_FIELD,SENDER_NUM,RECIPIENT_NUM)
+			values( #{sender},#{recipient},#{req_content},#{req_field},#{sender_num},${recipient_num})
+	</insert>
+	
+	
+	<select id="getDeptList" resultType="emp">
+		 select * from employee_table 
+                    where emp_dept = #{dept}
+	</select>
+	
+	<insert id="insertAnnual" parameterType="WflowAnnualDTO">
+		Insert into ANNUAL_TABLE 
+		(SENDER_NUM,PERIOD,EXPECTED_DATE,EMP_NAME,EMP_DEPT,SENDER,RECIPIENT,RECIPIENT_NUM) 
+			values (#{sender_num},#{period},#{expected_date},#{emp_name}
+			,#{emp_dept},#{sender},#{recipient},${recipient_num})
+	</insert>
+	
+	<select id="selectStorage" parameterType="int" resultType="storage">
+		select S.* ,E.emp_name , e.emp_profile,e.emp_dept from storage_table S join employee_table E
+			on S.sender_num = E.emp_num where s.recipient_num = #{emp_num}
+
+	</select>
+	
+	<select id="selectEquiList" resultType="WFlowEquiDTO">
+		select * from equipment_table order by req_date desc
+	</select>
+	
+	<select id="selectAnnList" resultType="WflowAnnualDTO">
+		select * from ANNUAL_TABLE order by req_date desc
+	</select>
+	
+	<update id="updateApp" parameterType="hashmap">
+		update (select * from storage_table 
+		where sender_num = #{senN} and req_date = #{reqD} and kinds =#{kinds})A
+		set A.APPROVAL = '완료' , A.command = #{command}
+	</update>
+	
+	<select id="selectCCount" resultType="int">
+		select count(*) from storage_table where APPROVAL = '미승인' or APPROVAL='요청' and recipient_num = #{emp_num}
+	</select>
+	
+	<update id="updateApproval" parameterType="hashmap">
+<!-- 		update equipment_table set APPROVAL = '완료' where sender_num = #{senN} and kinds =#{kinds} -->
+<!-- 			and req_date = #{reqD}  -->
+			
+			update equipment_table set APPROVAL = '완료' where sender_num =#{senN}
+				and kinds =#{kinds} and req_date =#{reqD} 
+	</update>
+	
+	<update id="updateApprovalanu" parameterType="hashmap">
+		update annual_table set APPROVAL = '완료' where sender_num = #{senN} and kinds = #{kinds}
+			and req_date =#{reqD} 
+	</update>
+	
+
+	
+	
+</mapper>
+
+
+
+
+
